@@ -5,7 +5,7 @@ var margin = {
   top: 20,
   right: 20,
   bottom: 100,
-  left: 20
+  left: 40
 };
 
 var width = svgWidth - margin.left - margin.right;
@@ -93,7 +93,7 @@ d3.csv("assets/data/data.csv").then(function(healthData) {
     // Create axes labels
     chartGroup.append("text")
       .attr("transform", "rotate(-90)")
-      .attr("y", 0 - margin.left + 40)
+      .attr("y", 0 - margin.left - 5)
       .attr("x", 0 - (height / 2))
       .attr("dy", "1em")
       .attr("class", "axisText")
